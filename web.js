@@ -6,7 +6,7 @@ var http = require('https');
 // create an express webserver
 var app = express.createServer(
 	express.logger(),
-	express.static(__dirname + '/public'),
+	express.static('https://social-web-to-lead.herokuapp.com/public'),
 	express.bodyParser(),
 	express.cookieParser(),
 	// set this to a secret value to encrypt session cookies
